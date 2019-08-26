@@ -1,16 +1,15 @@
 
-<!doctype html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <html><head><title>Python: module dictclient</title>
-<style type="text/css"><!--
-TT { font-family: lucidatypewriter, lucida console, courier }
---></style></head><body bgcolor="#f0f0f8">
+<meta charset="utf-8">
+</head><body bgcolor="#f0f0f8">
 
 <table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
 <tr bgcolor="#7799ee">
 <td valign=bottom>&nbsp;<br>
 <font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>dictclient</strong></big></big></font></td
 ><td align=right valign=bottom
-><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/home/jgoerzen/tree/dictclient/dictclient.py">/home/jgoerzen/tree/dictclient/dictclient.py</a></font></td></tr></table>
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/Users/mauro/projects/webster-ai/dictclient/dictclient.py">/Users/mauro/projects/webster-ai/dictclient/dictclient.py</a></font></td></tr></table>
     <p><tt>#&nbsp;Client&nbsp;for&nbsp;the&nbsp;DICT&nbsp;protocol&nbsp;(<a href="http://www.rfc-editor.org/rfc/rfc2229.txt">RFC2229</a>)<br>
 #<br>
 #&nbsp;Copyright&nbsp;(C)&nbsp;2002&nbsp;John&nbsp;Goerzen<br>
@@ -28,40 +27,40 @@ TT { font-family: lucidatypewriter, lucida console, courier }
 #&nbsp;&nbsp;&nbsp;&nbsp;You&nbsp;should&nbsp;have&nbsp;received&nbsp;a&nbsp;copy&nbsp;of&nbsp;the&nbsp;GNU&nbsp;General&nbsp;Public&nbsp;License<br>
 #&nbsp;&nbsp;&nbsp;&nbsp;along&nbsp;with&nbsp;this&nbsp;program;&nbsp;if&nbsp;not,&nbsp;write&nbsp;to&nbsp;the&nbsp;Free&nbsp;Software<br>
 #&nbsp;&nbsp;&nbsp;&nbsp;Foundation,&nbsp;Inc.,&nbsp;59&nbsp;Temple&nbsp;Place,&nbsp;Suite&nbsp;330,&nbsp;Boston,&nbsp;MA&nbsp;&nbsp;02111-1307&nbsp;&nbsp;USA</tt></p>
-
+<p>
 <table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
 <tr bgcolor="#aa55cc">
 <td colspan=3 valign=bottom>&nbsp;<br>
-<font color="#fffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
     
-<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;&nbsp;</td>
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
 <td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="re.html">re</a><br>
 </td><td width="25%" valign=top><a href="socket.html">socket</a><br>
-</td><td width="25%" valign=top></td><td width="25%" valign=top></td></tr></table></td></tr></table>
+</td><td width="25%" valign=top></td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
 <table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
 <tr bgcolor="#ee77aa">
 <td colspan=3 valign=bottom>&nbsp;<br>
 <font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
     
-<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;&nbsp;</td>
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
 <td width="100%"><dl>
 <dt><font face="helvetica, arial"><a href="dictclient.html#Connection">Connection</a>
 </font></dt><dt><font face="helvetica, arial"><a href="dictclient.html#Database">Database</a>
 </font></dt><dt><font face="helvetica, arial"><a href="dictclient.html#Definition">Definition</a>
 </font></dt></dl>
- 
+ <p>
 <table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
 <tr bgcolor="#ffc8d8">
 <td colspan=3 valign=bottom>&nbsp;<br>
 <font color="#000000" face="helvetica, arial"><a name="Connection">class <strong>Connection</strong></a></font></td></tr>
     
-<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td>
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
 <td colspan=2><tt>This&nbsp;class&nbsp;is&nbsp;used&nbsp;to&nbsp;establish&nbsp;a&nbsp;connection&nbsp;to&nbsp;a&nbsp;database&nbsp;server.<br>
 You&nbsp;will&nbsp;usually&nbsp;use&nbsp;this&nbsp;as&nbsp;the&nbsp;first&nbsp;call&nbsp;into&nbsp;the&nbsp;dictclient&nbsp;library.<br>
 Instantiating&nbsp;it&nbsp;takes&nbsp;two&nbsp;optional&nbsp;arguments:&nbsp;a&nbsp;hostname&nbsp;(a&nbsp;string)<br>
 and&nbsp;a&nbsp;port&nbsp;(an&nbsp;int).&nbsp;&nbsp;The&nbsp;hostname&nbsp;defaults&nbsp;to&nbsp;localhost<br>
 and&nbsp;the&nbsp;port&nbsp;to&nbsp;2628,&nbsp;the&nbsp;port&nbsp;specified&nbsp;in&nbsp;RFC.<br>&nbsp;</tt></td></tr>
-<tr><td>&nbsp;&nbsp;</td>
+<tr><td>&nbsp;</td>
 <td width="100%">Methods defined here:<br>
 <dl><dt><a name="Connection-__init__"><strong>__init__</strong></a>(self, hostname<font color="#909090">='localhost'</font>, port<font color="#909090">=2628</font>)</dt></dl>
 
@@ -123,27 +122,15 @@ save&nbsp;off&nbsp;the&nbsp;capabilities&nbsp;and&nbsp;messageid.</tt></dd></dl>
 <dl><dt><a name="Connection-sendcommand"><strong>sendcommand</strong></a>(self, command)</dt><dd><tt>Takes&nbsp;a&nbsp;command,&nbsp;without&nbsp;a&nbsp;newline&nbsp;character,&nbsp;and&nbsp;sends&nbsp;it&nbsp;to<br>
 the&nbsp;server.</tt></dd></dl>
 
-<hr>
-Data and non-method functions defined here:<br>
-<dl><dt><strong>__doc__</strong> = 'This class is used to establish a connection to ... and the port to 2628, the port specified in RFC.'<dd><tt>str(object)&nbsp;-&gt;&nbsp;string<br>
-&nbsp;<br>
-Return&nbsp;a&nbsp;nice&nbsp;string&nbsp;representation&nbsp;of&nbsp;the&nbsp;object.<br>
-If&nbsp;the&nbsp;argument&nbsp;is&nbsp;a&nbsp;string,&nbsp;the&nbsp;return&nbsp;value&nbsp;is&nbsp;the&nbsp;same&nbsp;object.</tt></dl>
-
-<dl><dt><strong>__module__</strong> = 'dictclient'<dd><tt>str(object)&nbsp;-&gt;&nbsp;string<br>
-&nbsp;<br>
-Return&nbsp;a&nbsp;nice&nbsp;string&nbsp;representation&nbsp;of&nbsp;the&nbsp;object.<br>
-If&nbsp;the&nbsp;argument&nbsp;is&nbsp;a&nbsp;string,&nbsp;the&nbsp;return&nbsp;value&nbsp;is&nbsp;the&nbsp;same&nbsp;object.</tt></dl>
-
-</td></tr></table> 
+</td></tr></table> <p>
 <table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
 <tr bgcolor="#ffc8d8">
 <td colspan=3 valign=bottom>&nbsp;<br>
 <font color="#000000" face="helvetica, arial"><a name="Database">class <strong>Database</strong></a></font></td></tr>
     
-<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td>
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
 <td colspan=2><tt>An&nbsp;object&nbsp;corresponding&nbsp;to&nbsp;a&nbsp;particular&nbsp;database&nbsp;in&nbsp;a&nbsp;server.<br>&nbsp;</tt></td></tr>
-<tr><td>&nbsp;&nbsp;</td>
+<tr><td>&nbsp;</td>
 <td width="100%">Methods defined here:<br>
 <dl><dt><a name="Database-__init__"><strong>__init__</strong></a>(self, dictconn, dbname)</dt><dd><tt>Initialize&nbsp;the&nbsp;object&nbsp;--&nbsp;requires&nbsp;a&nbsp;<a href="#Connection">Connection</a>&nbsp;object&nbsp;and<br>
 a&nbsp;database&nbsp;name.</tt></dd></dl>
@@ -162,27 +149,15 @@ same&nbsp;as&nbsp;from&nbsp;<a href="#Connection">Connection</a>.<a href="#Datab
 The&nbsp;argument,&nbsp;word,&nbsp;is&nbsp;the&nbsp;word&nbsp;to&nbsp;look&nbsp;up.&nbsp;&nbsp;The&nbsp;return&nbsp;value&nbsp;is<br>
 the&nbsp;same&nbsp;as&nbsp;from&nbsp;<a href="#Connection">Connection</a>.<a href="#Database-define">define</a>().</tt></dd></dl>
 
-<hr>
-Data and non-method functions defined here:<br>
-<dl><dt><strong>__doc__</strong> = 'An object corresponding to a particular database in a server.'<dd><tt>str(object)&nbsp;-&gt;&nbsp;string<br>
-&nbsp;<br>
-Return&nbsp;a&nbsp;nice&nbsp;string&nbsp;representation&nbsp;of&nbsp;the&nbsp;object.<br>
-If&nbsp;the&nbsp;argument&nbsp;is&nbsp;a&nbsp;string,&nbsp;the&nbsp;return&nbsp;value&nbsp;is&nbsp;the&nbsp;same&nbsp;object.</tt></dl>
-
-<dl><dt><strong>__module__</strong> = 'dictclient'<dd><tt>str(object)&nbsp;-&gt;&nbsp;string<br>
-&nbsp;<br>
-Return&nbsp;a&nbsp;nice&nbsp;string&nbsp;representation&nbsp;of&nbsp;the&nbsp;object.<br>
-If&nbsp;the&nbsp;argument&nbsp;is&nbsp;a&nbsp;string,&nbsp;the&nbsp;return&nbsp;value&nbsp;is&nbsp;the&nbsp;same&nbsp;object.</tt></dl>
-
-</td></tr></table> 
+</td></tr></table> <p>
 <table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
 <tr bgcolor="#ffc8d8">
 <td colspan=3 valign=bottom>&nbsp;<br>
 <font color="#000000" face="helvetica, arial"><a name="Definition">class <strong>Definition</strong></a></font></td></tr>
     
-<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td>
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
 <td colspan=2><tt>An&nbsp;object&nbsp;corresponding&nbsp;to&nbsp;a&nbsp;single&nbsp;definition.<br>&nbsp;</tt></td></tr>
-<tr><td>&nbsp;&nbsp;</td>
+<tr><td>&nbsp;</td>
 <td width="100%">Methods defined here:<br>
 <dl><dt><a name="Definition-__init__"><strong>__init__</strong></a>(self, dictconn, db, word, defstr<font color="#909090">=None</font>)</dt><dd><tt>Instantiate&nbsp;the&nbsp;object.&nbsp;&nbsp;Requires:&nbsp;a&nbsp;<a href="#Connection">Connection</a>&nbsp;object,<br>
 a&nbsp;<a href="#Database">Database</a>&nbsp;object&nbsp;(NOT&nbsp;corresponding&nbsp;to&nbsp;'*'&nbsp;or&nbsp;'!'&nbsp;databases),<br>
@@ -196,38 +171,24 @@ definition.</tt></dd></dl>
 
 <dl><dt><a name="Definition-getword"><strong>getword</strong></a>(self)</dt><dd><tt>Get&nbsp;the&nbsp;word&nbsp;this&nbsp;object&nbsp;describes.</tt></dd></dl>
 
-<hr>
-Data and non-method functions defined here:<br>
-<dl><dt><strong>__doc__</strong> = 'An object corresponding to a single definition.'<dd><tt>str(object)&nbsp;-&gt;&nbsp;string<br>
-&nbsp;<br>
-Return&nbsp;a&nbsp;nice&nbsp;string&nbsp;representation&nbsp;of&nbsp;the&nbsp;object.<br>
-If&nbsp;the&nbsp;argument&nbsp;is&nbsp;a&nbsp;string,&nbsp;the&nbsp;return&nbsp;value&nbsp;is&nbsp;the&nbsp;same&nbsp;object.</tt></dl>
-
-<dl><dt><strong>__module__</strong> = 'dictclient'<dd><tt>str(object)&nbsp;-&gt;&nbsp;string<br>
-&nbsp;<br>
-Return&nbsp;a&nbsp;nice&nbsp;string&nbsp;representation&nbsp;of&nbsp;the&nbsp;object.<br>
-If&nbsp;the&nbsp;argument&nbsp;is&nbsp;a&nbsp;string,&nbsp;the&nbsp;return&nbsp;value&nbsp;is&nbsp;the&nbsp;same&nbsp;object.</tt></dl>
-
-</td></tr></table></td></tr></table>
+</td></tr></table></td></tr></table><p>
 <table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
 <tr bgcolor="#eeaa77">
 <td colspan=3 valign=bottom>&nbsp;<br>
 <font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
     
-<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;&nbsp;</td>
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
 <td width="100%"><dl><dt><a name="-dequote"><strong>dequote</strong></a>(str)</dt><dd><tt>Will&nbsp;remove&nbsp;single&nbsp;or&nbsp;double&nbsp;quotes&nbsp;from&nbsp;the&nbsp;start&nbsp;and&nbsp;end&nbsp;of&nbsp;a&nbsp;string<br>
 and&nbsp;return&nbsp;the&nbsp;result.</tt></dd></dl>
  <dl><dt><a name="-enquote"><strong>enquote</strong></a>(str)</dt><dd><tt>This&nbsp;function&nbsp;will&nbsp;put&nbsp;a&nbsp;string&nbsp;in&nbsp;double&nbsp;quotes,&nbsp;properly<br>
 escaping&nbsp;any&nbsp;existing&nbsp;double&nbsp;quotes&nbsp;with&nbsp;a&nbsp;backslash.&nbsp;&nbsp;It&nbsp;will<br>
 return&nbsp;the&nbsp;result.</tt></dd></dl>
-</td></tr></table>
+</td></tr></table><p>
 <table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
 <tr bgcolor="#55aa55">
 <td colspan=3 valign=bottom>&nbsp;<br>
 <font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
     
-<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;&nbsp;</td>
-<td width="100%"><strong>__file__</strong> = './dictclient.pyc'<br>
-<strong>__name__</strong> = 'dictclient'<br>
-<strong>version</strong> = '1.0'</td></tr></table>
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>version</strong> = '1.0.2'</td></tr></table>
 </body></html>

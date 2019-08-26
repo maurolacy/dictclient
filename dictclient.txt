@@ -1,10 +1,10 @@
-Python Library Documentation: module dictclient
+Help on module dictclient:
 
 NAME
     dictclient
 
 FILE
-    /home/jgoerzen/tree/dictclient/dictclient.py
+    /Users/mauro/projects/webster-ai/dictclient/dictclient.py
 
 DESCRIPTION
     # Client for the DICT protocol (RFC2229)
@@ -112,21 +112,6 @@ CLASSES
      |  sendcommand(self, command)
      |      Takes a command, without a newline character, and sends it to
      |      the server.
-     |  
-     |  ----------------------------------------------------------------------
-     |  Data and non-method functions defined here:
-     |  
-     |  __doc__ = 'This class is used to establish a connection to ... and the...
-     |      str(object) -> string
-     |      
-     |      Return a nice string representation of the object.
-     |      If the argument is a string, the return value is the same object.
-     |  
-     |  __module__ = 'dictclient'
-     |      str(object) -> string
-     |      
-     |      Return a nice string representation of the object.
-     |      If the argument is a string, the return value is the same object.
     
     class Database
      |  An object corresponding to a particular database in a server.
@@ -154,21 +139,6 @@ CLASSES
      |      Get a match from within this database.
      |      The argument, word, is the word to look up.  The return value is
      |      the same as from Connection.define().
-     |  
-     |  ----------------------------------------------------------------------
-     |  Data and non-method functions defined here:
-     |  
-     |  __doc__ = 'An object corresponding to a particular database in a serve...
-     |      str(object) -> string
-     |      
-     |      Return a nice string representation of the object.
-     |      If the argument is a string, the return value is the same object.
-     |  
-     |  __module__ = 'dictclient'
-     |      str(object) -> string
-     |      
-     |      Return a nice string representation of the object.
-     |      If the argument is a string, the return value is the same object.
     
     class Definition
      |  An object corresponding to a single definition.
@@ -190,21 +160,6 @@ CLASSES
      |  
      |  getword(self)
      |      Get the word this object describes.
-     |  
-     |  ----------------------------------------------------------------------
-     |  Data and non-method functions defined here:
-     |  
-     |  __doc__ = 'An object corresponding to a single definition.'
-     |      str(object) -> string
-     |      
-     |      Return a nice string representation of the object.
-     |      If the argument is a string, the return value is the same object.
-     |  
-     |  __module__ = 'dictclient'
-     |      str(object) -> string
-     |      
-     |      Return a nice string representation of the object.
-     |      If the argument is a string, the return value is the same object.
 
 FUNCTIONS
     dequote(str)
@@ -217,7 +172,6 @@ FUNCTIONS
         return the result.
 
 DATA
-    __file__ = './dictclient.py'
-    __name__ = 'dictclient'
-    version = '1.0'
+    version = '1.0.2'
+
 
